@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Register</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
+
 <body>
 
   <!-- Shared Decorations -->
   <img src="img/regorange.png" class="bg-shaperror" alt="Decorative Shape">
-    <img src="img/regred.png" class="bg-shaperredd" alt="Decorative Shape">
+  <img src="img/regred.png" class="bg-shaperredd" alt="Decorative Shape">
 
 
 
@@ -22,81 +24,86 @@
       <a href="index.html"> <img src="img/favicon.png" alt="Global Village Logo" class="logo" /></a>
       <div class="hamburger" id="hamburger">&#9776;</div>
       <nav id="nav-menu">
-        <a href="index.html">Home</a>
-        <a href="">Speakers</a>
-        <a href="">Partners</a>
-        <a href="">OC team</a>
+        <a href="./index.html">Home</a>
+        <a href="./404.html">Speakers</a>
+        <a href="./404.html">Partners</a>
+        <a href="./404.html">OC team</a>
       </nav>
     </header>
 
-  <!-- Registration Section -->
-  <section class="register-page">
-    <div class="in">
-    
-    <h1>Join The Global Celebration!</h1>
-    <p class="sub-header">Ready To Experience The World In One Place?</p>
-    <p class="desc">
-      Register now to be part of Global Village 2025, where cultures meet, connections grow, and memories are made.
-      Whether you’re a culture lover, curious explorer, or just seeking a good time — this event is for you.
-      🗓 Spots are limited — don’t miss out!  
-      👉 Fill out the form below and get ready to travel the world—without leaving Manouba.
-    </p>
 
-    <form action="#" class="register-form">
-      <input type="text" name="name" placeholder="Full Name" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <div class="phone-wrapper">
-        <select name="country">
-          <option value="tn">🇹🇳 +216</option>
-          <option value="us">🇺🇸 +1</option>
-          <!-- add more -->
-        </select>
-        <input type="tel" name="phone" placeholder="Phone Number" required>
+    <!-- Registration Section -->
+    <section class="register-page">
+      <div class="in">
+
+        <h1>Join The Global Celebration!</h1>
+        <p class="sub-header">Ready To Experience The World In One Place?</p>
+        <p class="desc">
+          Register now to be part of Global Village 2025, where cultures meet, connections grow, and memories are made.
+          Whether you’re a culture lover, curious explorer, or just seeking a good time — this event is for you.
+          🗓 Spots are limited — don’t miss out!
+          👉 Fill out the form below and get ready to travel the world—without leaving Manouba.
+        </p>
+
+        <div id="loader" class="loader-overlay" style="display: none;">
+          <div class="spinner"></div>
+        </div>
+
+
+
+        <form id="registrationForm" class="register-form" method="POST"
+          action="https://script.google.com/macros/s/AKfycbw4HkI2MsW96I8FdiEaztEBsnM-u1RHC76U0h2eh67tIbNqPbY_wuFBbr-bzhMaKxqrSA/exec">
+          <input type="hidden" name="type" value="participant" />
+          <input type="hidden" name="Code" id="code" />
+
+          <input type="text" name="Full Name" placeholder="Full Name" required>
+          <input type="email" name="Email" placeholder="Email" required>
+          <div class="phone-wrapper">
+            <input type="tel" name="Phone Number" placeholder="Phone Number ( Exemple : +216 28 880 729)" required>
+          </div>
+          <label class="agree">
+            <input type="checkbox" id="agree">
+            I agree to let AIESEC use my contact for future events and partner promotions.
+          </label>
+          <button type="submit" class="btn-primary">Register Now !</button>
+        </form>
       </div>
-      <label class="agree">
-        <input type="checkbox" >
-        I agree to let AIESEC use my contact for future events and partner promotions.
-      </label>
-      <button type="submit" class="btn-primary">Register Now !</button>
-    </form>
-    </div>
-  </section>
+    </section>
   </div>
 
-<footer>
-  <div class="footer-grid">
-    <div class="footer-column">
-      <h4>Event Hub</h4>
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Speakers</a></li>
-        <li><a href="#">Partners</a></li>
-        <li><a href="#">Event Organizers</a></li>
-        <li><a href="#">Register</a></li>
-      </ul>
-    </div>
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h4>Event Hub</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Speakers</a></li>
+          <li><a href="#">Partners</a></li>
+          <li><a href="#">Event Organizers</a></li>
+          <li><a href="#">Register</a></li>
+        </ul>
+      </div>
 
-    <div class="footer-column">
-      <h4>Contact Us</h4>
-      <ul>
-        <li><a href="mailto:Global.Village.Medina@Gmail.Com">Global.Village.Medina@Gmail.Com</a></li>
-        <li><a href="tel:+21628880729">+216 28 880 729</a></li>
-      </ul>
-    </div>
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="mailto:Global.Village.Medina@Gmail.Com">Global.Village.Medina@Gmail.Com</a></li>
+          <li><a href="tel:+21628880729">+216 28 880 729</a></li>
+        </ul>
+      </div>
 
-    <div class="footer-column">
-      <h4>Socials</h4>
-      <div class="social-icons">
-        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-          <img src="img/facebook.png" alt="Facebook Icon" />
-        </a>
-        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-          <img src="img/instagram.png" alt="Instagram Icon" />
-        </a>
+      <div class="footer-column">
+        <h4>Socials</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/events/728683419516837" target="_blank"><img src="img/facebook.png"
+              alt="Facebook Icon" /></a>
+          <a href="https://www.instagram.com/global_village_2k25/" target="_blank"><img src="img/instagram.png"
+              alt="Instagram Icon" /></a>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
+
 
 
   <!-- Shared JS (hamburger, etc.) -->
@@ -104,7 +111,52 @@
     const hamburger = document.getElementById("hamburger");
     const navMenu = document.getElementById("nav-menu");
     hamburger.addEventListener("click", () => navMenu.classList.toggle("active"));
+
+    const form = document.getElementById("registrationForm");
+const formElements = form.elements;
+const loader = document.getElementById("loader");
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+
+  const randomNumber = Math.floor(Math.random() * 10000);
+  const visitorCode = "Participant-" + randomNumber;
+  document.getElementById("code").value = visitorCode;
+
+  const data = new FormData(form);
+  const action = form.action;
+
+  // Show loader
+  loader.style.display = "flex";
+
+  for (const element of formElements) {
+    element.disabled = true;
+  }
+
+  fetch(action, {
+    method: "POST",
+    body: data,
+  })
+  .then((response) => {
+    if (!response.ok) throw new Error("Network response was not ok");
+    return response.json();
+  })
+  .then((data) => {
+    // Redirect to welcome page
+    window.location.href = "welcome.html";
+  })
+  .catch((error) => {
+    console.error("Registration error:", error);
+    alert("There was an error. Please try again.");
+    for (const element of formElements) {
+      element.disabled = false;
+    }
+    loader.style.display = "none"; // hide loader on error
+  });
+});
+
   </script>
 
 </body>
+
 </html>

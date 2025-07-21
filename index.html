@@ -42,10 +42,10 @@
       <a href="index.html"> <img src="img/favicon.png" alt="Global Village Logo" class="logo" /></a>
       <div class="hamburger" id="hamburger">&#9776;</div>
       <nav id="nav-menu">
-        <a href="#hero">Home</a>
-        <a href="">Speakers</a>
-        <a href="">Partners</a>
-        <a href="">OC team</a>
+        <a href="./index.html">Home</a>
+        <a href="./404.html">Speakers</a>
+        <a href="./404.html">Partners</a>
+        <a href="./404.html">OC team</a>
       </nav>
     </header>
 
@@ -78,13 +78,32 @@
         experience Global Village invites you to explore the world without leaving your city.</p>
     </div>
     <div class="about-video">
-      <div class="video-fixed">
-        <video controls poster="img/video-thumb.jpg">
-          <source src="img/the after movie.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
+  <div class="about-video">
+  <div class="video-fixed">
+    <!-- 👇 Image has same class as video so it inherits the same CSS -->
+    <img
+      src="img/vboxi.png"
+      alt="Play Video"
+      id="video-thumbnail"
+      class="video-fixed"
+      style="cursor: pointer;"
+    />
+
+    <!-- 👇 Hidden video with same styling -->
+    <video
+      controls
+      poster="img/video-thumb.jpg"
+      id="real-video"
+      class="video-fixed"
+      style="display: none;"
+    >
+      <source src="img/the after movie.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+</div>
+
+</div>
   </section>
 
   <!-- AIESEC Section -->
@@ -203,20 +222,28 @@
     <div class="footer-column">
       <h4>Socials</h4>
       <div class="social-icons">
-        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-          <img src="img/facebook.png" alt="Facebook Icon" />
-        </a>
-        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
-          <img src="img/instagram.png" alt="Instagram Icon" />
-        </a>
+        <a href="https://www.facebook.com/events/728683419516837" target="_blank"><img src="img/facebook.png" alt="Facebook Icon" /></a>
+        <a href="https://www.instagram.com/global_village_2k25/" target="_blank"><img src="img/instagram.png" alt="Instagram Icon" /></a>
       </div>
     </div>
   </div>
 </footer>
 
 
+
+
   <!-- JS: Hamburger + Countdown -->
   <script>
+
+  const thumbnail = document.getElementById("video-thumbnail");
+  const video = document.getElementById("real-video");
+
+  thumbnail.addEventListener("click", () => {
+    thumbnail.style.display = "none"; // Hide the image
+    video.style.display = "block";    // Show the video
+    video.play();                     // Start playing automatically
+  });
+
     function animateCounter(id, target) {
       const el = document.getElementById(id);
       let count = 0;
