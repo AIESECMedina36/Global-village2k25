@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    .cards {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      margin: 0;
+      margin-bottom: 70PX;
+    }
+
+    .carde {
+      display: flex;
+      align-items: center;
+      width: 85vw;
+      max-width: 850px;
+      padding: 44px 30px 44px 20px;
+      background: #ffffff;
+      margin-bottom: 30px;
+      border-radius: 24px;
+      color: #3f3b39 !important;
+    }
+
+    .carde img {
+      max-width: 280px;
+      width: 36vw;
+      height: 300px;
+      object-fit: cover;
+      margin-left: -60px;
+      margin-right: 30px;
+      border-radius: inherit;
+      box-shadow: 0 60px 40px rgb(0 0 0 / 8%);
+      transition: border-radius 0.3s;
+    }
+
+    .carde h2 {
+      font-weight: bolder;
+      font-size: 30px;
+      font-weight: 400;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .carde h3 {
+      font-size: 20px;
+      font-weight: 400;
+      margin: 0;
+      opacity: 0.75;
+    }
+
+    .carde p {
+      font-size: 17px;
+      font-weight: 400;
+      margin-bottom: 30px;
+      opacity: 0.5;
+    }
+
+    .socials {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .socials>a {
+      position: relative;
+      border: 0;
+      background: transparent;
+      color: #f8f8f8;
+      padding: 0;
+    }
+
+    .socials>a:first-child::before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      top: 50%;
+      left: 50%;
+      width: 52px;
+      height: 52px;
+      translate: -50% -50%;
+      border-radius: 50%;
+      background: var(--gradient);
+      transition: 0.3s;
+      transform: translateY(0);
+    }
+
+    .socials>a>i {
+      position: relative;
+      z-index: 1;
+      border: 4px solid var(--card);
+      background: #3f3b39;
+      display: grid;
+      place-items: center;
+      font-size: 24px;
+      width: 50px;
+      height: 50px;
+      border-radius: 40px;
+    }
+
+    @media (width <=700px) {
+      .cards {
+    display: flex
+;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 0PX;
+}
+      .carde {
+        margin: 0 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 60px;
+        width: 100%;
+                MARGIN-TOP: 90PX;
+        text-align: center;
+        flex-direction: column;
+      }
+
+      .carde h2 {
+        margin-right: 0;
+        font-size: 26px;
+      }
+
+      .carde img {
+        margin: -100px 0 30px 0;
+        width: 100%;
+        max-width: 1000px;
+        height: 250px;
+      }
+
+      .carde p {
+        max-width: 360px;
+      }
+
+      .socials {
+        justify-content: center;
+      }
+    }
+
+    @media (width <=440px) {
+      .carde {
+        margin: 0 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 10PX;
+        width: 100%;
+        MARGIN-TOP: 107PX;
+        text-align: center;
+        flex-direction: column;
+    }
+        .carde h2 {
+        margin-right: 0;
+        font-size: 21px;
+    }
+    .carde h3 {
+      font-weight: bolder;
+    font-size: 17px;
+    }
+    .carde P {
+    font-size: 16px;
+    }
+      .carde img {
+        height: 50vw;
+        width: 50vw;
+        border-radius: 50%;
+        border: 12px solid var(--card);
+        box-shadow: none;
+        margin: -140px 0 30px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <img src="img/regorange.png" class="bg-shaperror" alt="Decorative Shape">
+  <img src="img/regred.png" class="bg-shaperredd" alt="Decorative Shape">
+
+  <div class="ab">
+    <header class="header">
+      <a href="index.html"> <img src="img/favicon.png" alt="Global Village Logo" class="logo" /></a>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <nav id="nav-menu">
+        <a href="./index.html">Home</a>
+        <a href="./speakers.html">Speakers</a>
+        <a href="./404.html">OC team</a>
+      </nav>
+    </header>
+
+    <section class="register-page sp">
+      <div class="in">
+        <h1>Speakers</h1>
+        <p class="sub-header">Inspiring Minds, Powerful Stories</p>
+        <p class="desc">
+          Global Village 2025 is enriched by the voices of inspiring speakers from diverse backgrounds. Each of them
+          brings stories, insights, and experiences
+          that spark connection, reflection, and curiosity. <br><br>
+          <strong class="sub-header">Making culture not just something we see, but something we feel.</strong>
+        </p>
+        <div class="cards">
+          <div class="carde">
+            <img src="./img/samy.png" />
+            <div>
+              <h2>Samy Chaffai</h2>
+              <h3>Moderator</h3>
+              <p>
+A filmmaker, content creator, and Sadeem Season 2 finalist. Founder of TELEPORTED Production, he creates thought-provoking films and commercials known for impactful storytelling and cinematic visuals.              </p>
+              <div class="socials">
+                <a href="https://www.instagram.com/samy.chaffai/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/samy-chaffa%C3%AF/" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carde">
+            <img src="./img/ahmedb.jpg" />
+            <div>
+              <h2>Ahmed BACHOUCH</h2>
+              <h3>Speaker</h3>
+              <p>
+A content creator and software engineer blending storytelling with technology, known for his unique Tunisian Nomad style and engaging visual content.
+
+              </p>
+              <div class="socials">
+                <a href="https://www.instagram.com/bachouch_albachouch" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ahmed-bachouch/" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carde">
+            <img src="./img/batta.jpg" />
+            <div>
+              <h2>Ali Batta</h2>
+              <h3>Speaker</h3>
+              <p>
+               Food historian and gastro-diplomat with a passion for exploring culture through cuisine. Also a part-time content creator, sharing stories that bridge food, history, and identity.
+              </p>
+              <div class="socials">
+                <a href="https://www.instagram.com/alibattaeats" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="carde">
+            <img src="./img/dhia.PNG" />
+            <div>
+              <h2>Dhia</h2>
+              <h3>Speaker</h3>
+              <p>
+Tunisian paragliding pilot passionate about flight and adventure. Skilled and dedicated, he enjoys exploring the skies around the world while embracing the freedom of soaring above nature.
+
+              </p>
+              <div class="socials">
+                <a href="https://www.instagram.com/fly_with_dhia/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h4>Event Hub</h4>
+        <ul>
+          <li><a href="./index.html">About Us</a></li>
+          <li><a href="./speakers.html">Speakers</a></li>
+          <li><a href="./404.html">Event Organizers</a></li>
+          <li><a href="./register.html">Register</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="mailto:Global.Village.Medina@Gmail.Com">Global.Village.Medina@Gmail.Com</a></li>
+          <li><a href="tel:+21628880729">+216 28 880 729</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Socials</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/events/728683419516837" target="_blank"><img src="img/facebook.png"
+              alt="Facebook Icon" /></a>
+          <a href="https://www.instagram.com/global_village_2k25/" target="_blank"><img src="img/instagram.png"
+              alt="Instagram Icon" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
