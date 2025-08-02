@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+
+  <div class="ab">
+    <header class="header">
+      <a href="index.html"> <img src="img/favicon.png" alt="Global Village Logo" class="logo" /></a>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+      <nav id="nav-menu">
+        <a href="./index.html">Home</a>
+        <a href="./speakers.html">Speakers</a>
+        <a href="./partners.html">Partners</a>
+      </nav>
+    </header>
+
+    <!-- Partners Section -->
+    <section class="partner-section">
+      <!-- First Row -->
+      <div class="scroll-bar">
+        <div class="scroll-content">
+          
+          <img src="./img/p4.jpeg" alt="">
+          <img src="./img/p5.jpeg" alt="">
+            <img src="./img/p1.jpg" alt="">
+            <img src="./img/p6.jpeg" alt="">
+          <img src="./img/p7.jpeg" alt="">
+          <img src="./img/p2.jpeg" alt="">
+          <img src="./img/p3.jpeg" alt="">
+          
+          <img src="./img/p5.jpeg" alt="">
+          <img src="./img/p6.jpeg" alt="">
+          <img src="./img/p7.jpeg" alt="">
+                    <img src="./img/p4.jpeg" alt="">
+
+          <img src="./img/p1.jpg" alt="">
+          <img src="./img/p2.jpeg" alt="">
+          <img src="./img/p3.jpeg" alt="">
+        </div>
+      </div>
+
+      <!-- Second Row (reverse direction) -->
+      <div class="scroll-bar reverse">
+        <div class="scroll-content">
+          <img src="./img/p7.jpeg" alt="">
+          <img src="./img/p6.jpeg" alt="">
+          <img src="./img/p5.jpeg" alt="">
+          <img src="./img/p4.jpeg" alt="">
+          <img src="./img/p3.jpeg" alt="">
+          <img src="./img/p2.jpeg" alt="">
+          <img src="./img/p1.jpg" alt="">
+
+          <img src="./img/p7.jpeg" alt="">
+          <img src="./img/p6.jpeg" alt="">
+          <img src="./img/p5.jpeg" alt="">
+          <img src="./img/p4.jpeg" alt="">
+          <img src="./img/p3.jpeg" alt="">
+          <img src="./img/p2.jpeg" alt="">
+          <img src="./img/p1.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .partner-section {
+        padding: 40px 0;
+      }
+
+      .scroll-bar {
+        overflow: hidden;
+        white-space: nowrap;
+        position: relative;
+        user-select: none;
+        margin: 20px 0;
+      }
+
+      .scroll-content {
+        display: inline-flex;
+        gap: 40px;
+        animation: scroll-left 20s linear infinite;
+      }
+
+      .reverse .scroll-content {
+        animation: scroll-right 25s linear infinite;
+      }
+
+      .scroll-content img {
+        height: 250px;
+        border-radius: 20PX;
+        pointer-events: none;
+      }
+       @media (max-width: 400px) {
+        .scroll-content img {
+          height: 200px;
+        }
+      }
+      @keyframes scroll-left {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+
+      @keyframes scroll-right {
+        0% { transform: translateX(-50%); }
+        100% { transform: translateX(0); }
+      }
+    </style>
+
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h4>Event Hub</h4>
+        <ul>
+          <li><a href="./index.html">About Us</a></li>
+          <li><a href="./speakers.html">Speakers</a></li>
+          <li><a href="./partners.html">Partners</a></li>
+          <li><a href="./register.html">Register</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="mailto:Global.Village.Medina@gmail.com">Global.Village.Medina@gmail.com</a></li>
+          <li><a href="tel:+21628880729">+216 28 880 729</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Socials</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/events/728683419516837" target="_blank"><img src="img/facebook.png" alt="Facebook Icon" /></a>
+          <a href="https://www.instagram.com/global_village_2k25/" target="_blank"><img src="img/instagram.png" alt="Instagram Icon" /></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Shared JS (hamburger, etc.) -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("nav-menu");
+    hamburger.addEventListener("click", () => navMenu.classList.toggle("active"));
+  </script>
+
+</body>
+</html>
