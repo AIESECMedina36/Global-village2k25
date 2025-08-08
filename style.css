@@ -1086,3 +1086,8 @@ background: linear-gradient(180deg,rgba(0, 188, 225, 1) 16%, rgba(230, 250, 255,
   padding-bottom: 20px !important;  
   padding-inline: 20PX !important;
 }
+.end{
+  width: 70%;
+  margin-inline: auto ;
+  margin-top: 50px !important;
+}
